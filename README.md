@@ -1,22 +1,31 @@
 # Beyond Trinucleotides and Parity: Exact Klein V<sub>4</sub> Spectral Algebra of Viral Mimicry, APOBEC3 Evolutionary Evasion, and Chiral Mutagenesis on the Human T2T-CHM13v2.0 Codon Torus
 
+[![Zero-RNG 100/100 Verification](https://github.com/Dr-Logvinovich/virome-oncogenomics-torus/actions/workflows/ci.yml/badge.svg)](https://github.com/Dr-Logvinovich/virome-oncogenomics-torus/actions/workflows/ci.yml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24535090.svg)](https://doi.org/10.5281/zenodo.24535090)
+[![ResearchGate](https://img.shields.io/badge/ResearchGate-Preprint_418353260-00ccbb.svg)](https://www.researchgate.net/publication/418353260_Beyond_Trinucleotides_and_Parity_Exact_Klein_V4_Spectral_Algebra_of_Viral_Mimicry_APOBEC3_Evolutionary_Evasion_and_Chiral_Mutagenesis_on_the_Human_T2T-CHM13v20_Codon_Torus)
 [![Preprint PDF](https://img.shields.io/badge/Preprint_PDF-30_Pages_(v2.9.1)-b31b1b.svg)](virome-oncogenomics-torus.pdf)
 [![Zero-RNG Self-Tests](https://img.shields.io/badge/Zero--RNG_Self--Tests-100%2F100_Passed-brightgreen.svg)](run_v2_9_1_full24.log)
 [![Reference Genome](https://img.shields.io/badge/Human_Reference-T2T--CHM13v2.0_(24_Chr)-0366d6.svg)](chr_cache)
 [![Offline Caches](https://img.shields.io/badge/Offline_NCBI_Caches-100%25_Bundled-2ea44f.svg)](#repository-structure)
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B_(Zero--RNG)-3776ab.svg)](human_t2t_atlas_v2_9_1.py)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 > **Authors:**  
 > **Victor Logvinovich** — Master of Physical and Mathematical Sciences, Researcher in Pedagogical Sciences (Mathematics), Kobrin, Belarus · [`lomakez@icloud.com`](mailto:lomakez@icloud.com) · [ORCID `0009-0007-2040-6955`](https://orcid.org/0009-0007-2040-6955)  
 > **Jean-Claude Perez** — PhD in Mathematics and Computer Science, Retired IBM AI European Research Centre (Montpellier) & Luc Montagnier Foundation · [`jeanclaudeperez2@gmail.com`](mailto:jeanclaudeperez2@gmail.com) · [ORCID `0000-0001-6446-2042`](https://orcid.org/0000-0001-6446-2042)
 >
-> **Frozen Dataset & Verification Release:** `v2.9.1` (`2026-11-25T12:12:45Z`) · **Zero-RNG (`zero_rng = true`)** · **100/100 Algebraic Self-Tests Passed** · **0 Free Parameters**
+> **Frozen Dataset & Verification Release:** `v2.9.1` (`2026-11-25T12:12:45Z`) · **Zero-RNG (`zero_rng = true`)** · **100/100 Algebraic Self-Tests Passed** · **0 Free Fitting Parameters**
 
-📄 **Read the Complete 30-Page Monograph:** [`virome-oncogenomics-torus.pdf`](virome-oncogenomics-torus.pdf) · **LaTeX Source:** [`virome-oncogenomics-torus.tex`](virome-oncogenomics-torus.tex) · **Full Audit Tables:** [`results_virome_onco_v2_9_1/virome_onco_audit_v2.md`](results_virome_onco_v2_9_1/virome_onco_audit_v2.md)
+---
 
-**Part V of the Zero-RNG Double-Stranded Codon Torus Program:**  
-[Part I–III: `codon-torus-syntax`](https://github.com/Dr-Logvinovich/codon-torus-syntax) · [Part IV: `human-t2t-torus-atlas`](https://github.com/Dr-Logvinovich/human-t2t-torus-atlas) · [**Part V: `virome-oncogenomics-torus`**](https://github.com/Dr-Logvinovich/virome-oncogenomics-torus)
+### Official Publications & Open Verification Links
+
+| Resource | Direct Access | Details |
+|---|---|---|
+| **Zenodo Permanent Archive (OpenAIRE)** | **[`doi.org/10.5281/zenodo.24535090`](https://doi.org/10.5281/zenodo.24535090)** | Concept DOI (`v1`: [`10.5281/zenodo.24535091`](https://doi.org/10.5281/zenodo.24535091)) · Full **936.81 MB** offline bundle (`PDF` + `TEX` + `PY` + `results_cache.zip`) |
+| **ResearchGate Preprint** | **[`ResearchGate #418353260`](https://www.researchgate.net/publication/418353260_Beyond_Trinucleotides_and_Parity_Exact_Klein_V4_Spectral_Algebra_of_Viral_Mimicry_APOBEC3_Evolutionary_Evasion_and_Chiral_Mutagenesis_on_the_Human_T2T-CHM13v20_Codon_Torus)** | Open peer discussion, citation tracking & full-text preview |
+| **Full 30-Page Monograph (PDF / TeX)** | **[`virome-oncogenomics-torus.pdf`](virome-oncogenomics-torus.pdf)** · [`virome-oncogenomics-torus.tex`](virome-oncogenomics-torus.tex) | 16 tables, 7 300-DPI figures, complete proofs & Appendix A (`100/100` ledger) |
+| **Live CI Verification (GitHub Actions)** | **[`Zero-RNG 100/100 Workflow`](https://github.com/Dr-Logvinovich/virome-oncogenomics-torus/actions/workflows/ci.yml)** | Automated SHA-256 check, Zero-RNG AST guard & `100/100` algebraic self-tests on every push |
+| **Full Series Repositories** | [`codon-torus-syntax` (Parts I–III)](https://github.com/Dr-Logvinovich/codon-torus-syntax) · [`human-t2t-torus-atlas` (Part IV)](https://github.com/Dr-Logvinovich/human-t2t-torus-atlas) · [**`virome-oncogenomics-torus` (Part V)**](https://github.com/Dr-Logvinovich/virome-oncogenomics-torus) | Unified Zero-RNG Double-Stranded Codon Torus Program |
 
 ---
 
@@ -30,9 +39,10 @@
 6. [Publication Figures Gallery (fig_V1 – fig_V7)](#publication-figures-gallery-fig_v1--fig_v7)
 7. [Repository Structure](#repository-structure)
 8. [100% Offline Zero-RNG Reproducibility Guide](#100-offline-zero-rng-reproducibility-guide)
-9. [Cryptographic Provenance & Checksums](#cryptographic-provenance--checksums)
-10. [Complete Codon-Torus Research Series](#complete-codon-torus-research-series)
-11. [Citation & License](#citation--license)
+9. [Open-Science & Adversarial Audit Standard](#open-science--adversarial-audit-standard)
+10. [Cryptographic Provenance & Checksums](#cryptographic-provenance--checksums)
+11. [Complete Codon-Torus Research Series](#complete-codon-torus-research-series)
+12. [Citation & License](#citation--license)
 
 ---
 
@@ -210,6 +220,7 @@ Raw 6-mer alignment conflates higher-order chromatin syntax with GC% and trinucl
 
 ```text
 virome-oncogenomics-torus/
+├── .github/workflows/ci.yml               # Live GitHub Actions CI: SHA-256, Zero-RNG AST guard & 100/100 self-tests
 ├── virome-oncogenomics-torus.pdf          # Complete 30-page monograph (v2.9.1)
 ├── virome-oncogenomics-torus.tex          # Publication-ready LaTeX source
 ├── human_t2t_atlas_v2_9_1.py              # Standalone Zero-RNG verification & audit engine (100/100 self-tests)
@@ -229,7 +240,7 @@ virome-oncogenomics-torus/
 
 ## 100% Offline Zero-RNG Reproducibility Guide
 
-Requires **Python 3.10+** with `numpy`, `scipy`, and `matplotlib`. Because `viral_cache/`, `onco_cache/`, and `chr_cache/` are bundled directly inside this repository, the entire pipeline reproduces **100% offline with zero network calls, zero Monte Carlo RNG, and zero free fitting parameters**.
+Requires **Python 3.10+** with `numpy`, `scipy`, and `matplotlib`. Because `viral_cache/`, `onco_cache/`, and `chr_cache/` are bundled directly inside this repository (and archived in a single `933.43 MB` `results_cache.zip` on [Zenodo](https://doi.org/10.5281/zenodo.24535090)), the entire pipeline reproduces **100% offline with zero network calls, zero Monte Carlo RNG, and zero free fitting parameters**.
 
 ```bash
 git clone [https://github.com/Dr-Logvinovich/virome-oncogenomics-torus.git](https://github.com/Dr-Logvinovich/virome-oncogenomics-torus.git)
@@ -248,14 +259,24 @@ python3 human_t2t_atlas_v2_9_1.py --virome-onco-audit --out-dir results_virome_o
 
 ---
 
+## Open-Science & Adversarial Audit Standard
+
+This codebase is designed for transparent, independent verification and red-team scrutiny:
+* **Zero RNG (`zero_rng = true`):** No `random`, no `np.random`, no Monte Carlo shuffles, and no stochastic permutations anywhere in the pipeline — enforced automatically by AST inspection in [GitHub Actions CI](https://github.com/Dr-Logvinovich/virome-oncogenomics-torus/actions/workflows/ci.yml).
+* **Zero Free Parameters (`p = 0`):** Every eigenspace projector, Markov-1/2 null, COSMIC Jacobian, degree-6 kataegis expectation polynomial, and exact DP Mann–Whitney p-value is closed-form.
+* **Startup Self-Verification (`100/100`):** Before reading any empirical FASTA file, the engine verifies 47 core T2T-CHM13v2.0 identities and 53 virome/oncogenomics theorems to machine precision (`0.0` to `10⁻¹⁴`).
+* **Full Offline Sequence Provenance:** Every viral genome, human RefSeqGene locus, and T2T chromosome is SHA-256 fingerprinted in `virome_onco_audit_v2.json`.
+
+---
+
 ## Cryptographic Provenance & Checksums
 
-Frozen release `v2.9.1` executed deterministically on UTC `2026-11-25T12:12:45Z` (Python `3.12.1`, NumPy `2.3.2`, SciPy `1.16.2`, Matplotlib `3.10.6`, `zero_rng = true`, `all_passed = true`). Independent red-team audits and adversarial checks of all algebraic identities and statistical controls are explicitly invited.
+Frozen release `v2.9.1` executed deterministically on UTC `2026-11-25T12:12:45Z` (Python `3.12.1`, NumPy `2.3.2`, SciPy `1.16.2`, Matplotlib `3.10.6`, `zero_rng = true`, `all_passed = true`).
 
-| Artifact | Path | Cryptographic SHA-256 / Verification |
+| Artifact | Path / Archive | Cryptographic SHA-256 / Verification |
 |---|---|---|
 | **Executable Engine** | [`human_t2t_atlas_v2_9_1.py`](human_t2t_atlas_v2_9_1.py) | `da9b2a74f062e663e523f096ef7e5807e173009ca582587ba1608b89c4cb205a` |
-| **24-Chr Human T2T Reference Tensor** | `human_t2t_euch_ref_v2_8.npz` *(built from [`chr_cache/`](chr_cache))* | `0e8c27327d5f373ba71e1134742303c3b4067fe02ba0148766b9374de71dd54d` |
+| **24-Chr Human T2T Reference Tensor** | `human_t2t_euch_ref_v2_8.npz` *(built from [`chr_cache/`](chr_cache) / [Zenodo](https://doi.org/10.5281/zenodo.24535090))* | `0e8c27327d5f373ba71e1134742303c3b4067fe02ba0148766b9374de71dd54d` |
 | **Full Markdown Audit Ledger** | [`results_virome_onco_v2_9_1/virome_onco_audit_v2.md`](results_virome_onco_v2_9_1/virome_onco_audit_v2.md) | 14 complete tables · 33/33 viruses · 28/28 loci · 28/28 T2T windows |
 | **Full JSON Machine Ledger** | [`results_virome_onco_v2_9_1/virome_onco_audit_v2.json`](results_virome_onco_v2_9_1/virome_onco_audit_v2.json) | Per-FASTA SHA-256 digests for every viral genome & human locus |
 | **Deterministic Run Log** | [`run_v2_9_1_full24.log`](run_v2_9_1_full24.log) | Full stdout log confirming `100/100` self-tests & 24-chr reference |
@@ -266,18 +287,18 @@ Frozen release `v2.9.1` executed deterministically on UTC `2026-11-25T12:12:45Z`
 
 This repository is **Part V** of the Zero-RNG Double-Stranded Codon Torus research program by **Victor Logvinovich** and **Jean-Claude Perez**:
 
-| Series Part | Title & Scope | GitHub Repository | Zenodo / Journal DOI |
+| Series Part | Title & Scope | GitHub Repository | Zenodo / Journal / ResearchGate |
 |---|---|---|---|
 | **Precursor (2010)** | *Codon populations in single-stranded whole human genome DNA are fractal and fine-tuned by the Golden Ratio 1.618* (J.-C. Perez, *Interdiscip. Sci.* 2(3):228–240) | — | [`10.1007/s12539-010-0022-0`](https://doi.org/10.1007/s12539-010-0022-0) |
 | **Parts I–III** | *From Form to Program*, *The Double-Stranded Codon Torus*, & *The Codon Memory Spectrum* (54–100 RefSeq taxa, synthetic mRNA BNT162b2/mRNA-1273, JCVI-syn1.0/3.0, Duplex-Safe Viterbi Compiler) | [`Dr-Logvinovich/codon-torus-syntax`](https://github.com/Dr-Logvinovich/codon-torus-syntax) | [`10.5281/zenodo.23287684`](https://doi.org/10.5281/zenodo.23287684) · [`10.5281/zenodo.23508080`](https://doi.org/10.5281/zenodo.23508080) |
 | **Part IV** | *A Complete Zero-RNG Toric Disk Atlas of the Human T2T-CHM13v2.0 Genome* (All 24 gapless human chromosomes, Theorems D1–D19) | [`Dr-Logvinovich/human-t2t-torus-atlas`](https://github.com/Dr-Logvinovich/human-t2t-torus-atlas) | [`10.5281/zenodo.24471261`](https://doi.org/10.5281/zenodo.24471261) |
-| **Part V (This Repo)** | *Beyond Trinucleotides and Parity: Exact Klein V<sub>4</sub> Spectral Algebra of Viral Mimicry, APOBEC3 Evolutionary Evasion, and Chiral Mutagenesis on the Human T2T-CHM13v2.0 Codon Torus* (`v2.9.1`, Theorems V1–V20) | [`Dr-Logvinovich/virome-oncogenomics-torus`](https://github.com/Dr-Logvinovich/virome-oncogenomics-torus) | [`virome-oncogenomics-torus.pdf`](virome-oncogenomics-torus.pdf) |
+| **Part V (This Repo)** | *Beyond Trinucleotides and Parity: Exact Klein V<sub>4</sub> Spectral Algebra of Viral Mimicry, APOBEC3 Evolutionary Evasion, and Chiral Mutagenesis on the Human T2T-CHM13v2.0 Codon Torus* (`v2.9.1`, Theorems V1–V20) | [`Dr-Logvinovich/virome-oncogenomics-torus`](https://github.com/Dr-Logvinovich/virome-oncogenomics-torus) | [`10.5281/zenodo.24535090`](https://doi.org/10.5281/zenodo.24535090) · [`ResearchGate #418353260`](https://www.researchgate.net/publication/418353260_Beyond_Trinucleotides_and_Parity_Exact_Klein_V4_Spectral_Algebra_of_Viral_Mimicry_APOBEC3_Evolutionary_Evasion_and_Chiral_Mutagenesis_on_the_Human_T2T-CHM13v20_Codon_Torus) |
 
 ---
 
 ## Citation & License
 
-If you use this codebase, offline sequence cache, theorems, or dataset freeze (`v2.9.1`), please cite:
+If you use this codebase, offline sequence archive, theorems, or dataset freeze (`v2.9.1`), please cite:
 
 ```bibtex
 @misc{logvinovich2026_virome_oncogenomics_torus,
@@ -286,6 +307,9 @@ If you use this codebase, offline sequence cache, theorems, or dataset freeze (`
   year         = {2026},
   month        = nov,
   version      = {v2.9.1},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.24535090},
+  url          = {[https://doi.org/10.5281/zenodo.24535090](https://doi.org/10.5281/zenodo.24535090)},
   howpublished = {\url{[https://github.com/Dr-Logvinovich/virome-oncogenomics-torus](https://github.com/Dr-Logvinovich/virome-oncogenomics-torus)}}
 }
 ```
