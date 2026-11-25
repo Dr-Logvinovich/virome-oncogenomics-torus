@@ -1,0 +1,135 @@
+================================================================================================
+PAPER 5 ZERO-RNG VIROME & ONCOGENOMICS AUDIT (v2.9.1) | 33 Viruses + 28 Human Loci | Standalone SCRIPT_DIR
+  SCRIPT_DIR = /Volumes/Мои документы/Virusu
+================================================================================================
+  [REF] Loaded 24-chr Human T2T Euchromatin Reference from /Volumes/Мои документы/Virusu/human_t2t_euch_ref_v2_8.npz
+  [ONCO  1/28] TP53    (chr17,   32.8 kb) | PR2=85.51% | NonEnv=74.6% | SBS1_ch=18.39% vs APOBEC_ch=48.7%
+  [ONCO  2/28] TP63    (chr3 ,  272.9 kb) | PR2=100.00% | NonEnv=40.7% | SBS1_ch=3.60% vs APOBEC_ch=48.7%
+  [ONCO  3/28] TP73    (chr1 ,   90.6 kb) | PR2=88.97% | NonEnv=43.4% | SBS1_ch=8.84% vs APOBEC_ch=49.2%
+  [ONCO  4/28] BRCA1   (chr17,  193.7 kb) | PR2=99.55% | NonEnv=66.8% | SBS1_ch=2.12% vs APOBEC_ch=47.7%
+  [ONCO  5/28] BRCA2   (chr13,   91.2 kb) | PR2=100.00% | NonEnv=56.0% | SBS1_ch=5.83% vs APOBEC_ch=48.0%
+  [ONCO  6/28] PTEN    (chr10,  115.5 kb) | PR2=96.98% | NonEnv=46.6% | SBS1_ch=8.74% vs APOBEC_ch=48.6%
+  [ONCO  7/28] RB1     (chr13,  185.1 kb) | PR2=96.56% | NonEnv=43.0% | SBS1_ch=11.44% vs APOBEC_ch=49.1%
+  [ONCO  8/28] APC     (chr5 ,  163.7 kb) | PR2=98.02% | NonEnv=49.9% | SBS1_ch=9.15% vs APOBEC_ch=48.5%
+  [ONCO  9/28] VHL     (chr3 ,   17.4 kb) | PR2=96.17% | NonEnv=73.2% | SBS1_ch=16.47% vs APOBEC_ch=46.6%
+  [ONCO 10/28] MLH1    (chr3 ,   79.5 kb) | PR2=100.00% | NonEnv=56.3% | SBS1_ch=3.54% vs APOBEC_ch=48.9%
+  [ONCO 11/28] CDKN2A  (chr9 ,   33.7 kb) | PR2=91.05% | NonEnv=57.7% | SBS1_ch=24.79% vs APOBEC_ch=48.3%
+  [ONCO 12/28] ATM     (chr11,  153.3 kb) | PR2=99.47% | NonEnv=51.8% | SBS1_ch=6.52% vs APOBEC_ch=48.8%
+  [ONCO 13/28] MYC     (chr8 ,   14.5 kb) | PR2=100.00% | NonEnv=64.1% | SBS1_ch=25.43% vs APOBEC_ch=49.1%
+  [ONCO 14/28] TERT    (chr5 ,   48.9 kb) | PR2=66.62% | NonEnv=62.2% | SBS1_ch=30.93% vs APOBEC_ch=47.4%
+  [ONCO 15/28] KRAS    (chr12,   53.2 kb) | PR2=98.03% | NonEnv=55.2% | SBS1_ch=19.60% vs APOBEC_ch=48.4%
+  [ONCO 16/28] NRAS    (chr1 ,   19.4 kb) | PR2=100.00% | NonEnv=67.8% | SBS1_ch=21.23% vs APOBEC_ch=49.4%
+  [ONCO 17/28] HRAS    (chr11,   10.3 kb) | PR2=62.81% | NonEnv=71.5% | SBS1_ch=37.58% vs APOBEC_ch=50.5%
+  [ONCO 18/28] PIK3CA  (chr3 ,   98.6 kb) | PR2=100.00% | NonEnv=49.5% | SBS1_ch=7.72% vs APOBEC_ch=48.4%
+  [ONCO 19/28] EGFR    (chr7 ,  244.6 kb) | PR2=100.00% | NonEnv=28.3% | SBS1_ch=6.11% vs APOBEC_ch=49.1%
+  [ONCO 20/28] BRAF    (chr7 ,  212.4 kb) | PR2=96.02% | NonEnv=52.5% | SBS1_ch=6.09% vs APOBEC_ch=48.1%
+  [ONCO 21/28] ERBB2   (chr17,   47.5 kb) | PR2=100.00% | NonEnv=58.5% | SBS1_ch=12.29% vs APOBEC_ch=48.1%
+  [ONCO 22/28] BCL2    (chr18,  203.0 kb) | PR2=98.76% | NonEnv=36.4% | SBS1_ch=5.53% vs APOBEC_ch=49.1%
+  [ONCO 23/28] ALK     (chr2 ,  735.8 kb) | PR2=99.83% | NonEnv=28.1% | SBS1_ch=2.90% vs APOBEC_ch=49.1%
+  [ONCO 24/28] FHIT    (chr3 , 1511.2 kb) | PR2=99.29% | NonEnv=31.3% | SBS1_ch=1.83% vs APOBEC_ch=49.2%
+  [ONCO 25/28] GAPDH   (chr12,   10.9 kb) | PR2=97.49% | NonEnv=65.3% | SBS1_ch=31.03% vs APOBEC_ch=47.2%
+  [ONCO 26/28] ACTB    (chr7 ,   10.5 kb) | PR2=98.28% | NonEnv=67.2% | SBS1_ch=21.27% vs APOBEC_ch=50.5%
+  [ONCO 27/28] HBB     (chr11,   81.7 kb) | PR2=100.00% | NonEnv=45.8% | SBS1_ch=20.40% vs APOBEC_ch=48.9%
+  [ONCO 28/28] APOE    (chr19,   10.6 kb) | PR2=97.18% | NonEnv=68.1% | SBS1_ch=20.06% vs APOBEC_ch=48.0%
+  [VIR   1/33] HIV1_HXB2      (  9,181 bp, GC=42.1%) | PR2= 61.75% | NonEnv=74.7% | cos_Hum=+0.317 | best=chrX
+  [VIR   2/33] HIV2_BEN       ( 10,359 bp, GC=45.7%) | PR2= 58.02% | NonEnv=75.1% | cos_Hum=+0.352 | best=chr11
+  [VIR   3/33] HTLV1          (  8,507 bp, GC=53.5%) | PR2= 71.36% | NonEnv=73.9% | cos_Hum=+0.273 | best=chr11
+  [VIR   4/33] HTLV2          (  8,952 bp, GC=53.8%) | PR2= 89.21% | NonEnv=73.8% | cos_Hum=+0.238 | best=chr22
+  [VIR   5/33] SIV            (  9,623 bp, GC=44.4%) | PR2= 46.39% | NonEnv=76.9% | cos_Hum=+0.272 | best=chrX
+  [VIR   6/33] MoMLV          (  8,332 bp, GC=53.0%) | PR2= 68.54% | NonEnv=72.3% | cos_Hum=+0.195 | best=chr11
+  [VIR   7/33] HPV16          (  7,906 bp, GC=36.5%) | PR2=100.00% | NonEnv=74.3% | cos_Hum=+0.187 | best=chr13
+  [VIR   8/33] HPV18          (  7,857 bp, GC=40.4%) | PR2=100.00% | NonEnv=65.2% | cos_Hum=+0.214 | best=chr13
+  [VIR   9/33] HPV6b          (  7,902 bp, GC=40.9%) | PR2=100.00% | NonEnv=69.9% | cos_Hum=+0.161 | best=chr13
+  [VIR  10/33] HPV11          (  7,931 bp, GC=41.0%) | PR2=100.00% | NonEnv=71.1% | cos_Hum=+0.174 | best=chrY
+  [VIR  11/33] MCPyV          (  5,387 bp, GC=40.7%) | PR2= 99.22% | NonEnv=72.9% | cos_Hum=+0.292 | best=chr11
+  [VIR  12/33] SV40           (  5,243 bp, GC=40.8%) | PR2=100.00% | NonEnv=73.6% | cos_Hum=+0.347 | best=chr13
+  [VIR  13/33] JCV            (  5,130 bp, GC=40.4%) | PR2=100.00% | NonEnv=71.5% | cos_Hum=+0.371 | best=chr5
+  [VIR  14/33] BKV            (  5,153 bp, GC=39.5%) | PR2= 89.51% | NonEnv=71.6% | cos_Hum=+0.342 | best=chr13
+  [VIR  15/33] HBV            (  3,182 bp, GC=48.5%) | PR2= 51.66% | NonEnv=82.1% | cos_Hum=+0.188 | best=chrX
+  [VIR  16/33] HCV            (  9,646 bp, GC=58.2%) | PR2= 22.20% | NonEnv=77.9% | cos_Hum=+0.253 | best=chr11
+  [VIR  17/33] EBV_HHV4       (171,823 bp, GC=59.5%) | PR2= 86.52% | NonEnv=48.4% | cos_Hum=+0.431 | best=chr20
+  [VIR  18/33] KSHV_HHV8      (137,969 bp, GC=53.8%) | PR2= 94.41% | NonEnv=41.6% | cos_Hum=+0.504 | best=chr21
+  [VIR  19/33] HSV1           (152,222 bp, GC=68.3%) | PR2=100.00% | NonEnv=59.9% | cos_Hum=+0.055 | best=chr19
+  [VIR  20/33] HCMV_HHV5      (235,646 bp, GC=57.5%) | PR2=100.00% | NonEnv=44.5% | cos_Hum=+0.081 | best=chr18
+  [VIR  21/33] AAV2           (  4,679 bp, GC=53.8%) | PR2=100.00% | NonEnv=82.2% | cos_Hum=+0.211 | best=chr11
+  [VIR  22/33] HAdV5          ( 35,937 bp, GC=55.2%) | PR2= 93.50% | NonEnv=62.3% | cos_Hum=+0.303 | best=chr21
+  [VIR  23/33] SARS_CoV_2     ( 29,903 bp, GC=38.0%) | PR2= 80.35% | NonEnv=57.4% | cos_Hum=+0.242 | best=chr13
+  [VIR  24/33] SARS_CoV_1     ( 29,751 bp, GC=40.8%) | PR2= 69.03% | NonEnv=55.5% | cos_Hum=+0.360 | best=chr13
+  [VIR  25/33] MERS_CoV       ( 30,119 bp, GC=41.2%) | PR2= 86.58% | NonEnv=64.8% | cos_Hum=+0.260 | best=chr13
+  [VIR  26/33] Ebola_Zaire    ( 18,959 bp, GC=41.1%) | PR2=100.00% | NonEnv=72.9% | cos_Hum=+0.216 | best=chrX
+  [VIR  27/33] Measles        ( 15,894 bp, GC=47.4%) | PR2= 67.46% | NonEnv=67.1% | cos_Hum=+0.254 | best=chr11
+  [VIR  28/33] Poliovirus     (  7,440 bp, GC=46.3%) | PR2= 62.63% | NonEnv=75.3% | cos_Hum=+0.212 | best=chrX
+  [VIR  29/33] Zika           ( 10,794 bp, GC=50.9%) | PR2= 61.99% | NonEnv=63.5% | cos_Hum=+0.406 | best=chr11
+  [VIR  30/33] Dengue2        ( 10,723 bp, GC=45.8%) | PR2= 78.67% | NonEnv=61.2% | cos_Hum=+0.407 | best=chrY
+  [VIR  31/33] Phage_Lambda   ( 48,502 bp, GC=49.9%) | PR2= 95.87% | NonEnv=43.8% | cos_Hum=+0.181 | best=chrY
+  [VIR  32/33] Phage_T4       (168,903 bp, GC=35.3%) | PR2= 87.07% | NonEnv=50.2% | cos_Hum=+0.153 | best=chr4
+  [VIR  33/33] Phage_PhiX174  (  5,386 bp, GC=44.8%) | PR2= 54.36% | NonEnv=78.2% | cos_Hum=+0.104 | best=chr13
+  [THM-V2 INS] HBV        -> TERT   | +PR2=66.81% | W_-- SNR=4.0x | HH cancel=1.2x
+  [THM-V2 INS] HBV        -> MYC    | +PR2=100.00% | W_-- SNR=-0.1x | HH cancel=0.0x
+  [THM-V2 INS] HPV16      -> MYC    | +PR2=100.00% | W_-- SNR=-0.1x | HH cancel=0.0x
+  [THM-V2 INS] HPV16      -> FHIT   | +PR2=99.31% | W_-- SNR=0.4x | HH cancel=1.0x
+  [THM-V2 INS] HPV18      -> MYC    | +PR2=100.00% | W_-- SNR=-0.0x | HH cancel=0.0x
+  [THM-V2 INS] HPV6b      -> MYC    | +PR2=100.00% | W_-- SNR=-0.1x | HH cancel=0.0x
+  [THM-V2 INS] HIV1_HXB2  -> MYC    | +PR2=90.55% | W_-- SNR=0.1x | HH cancel=0.2x
+  [THM-V2 INS] HIV1_HXB2  -> TP53   | +PR2=86.03% | W_-- SNR=1.2x | HH cancel=2.3x
+  [THM-V2 INS] HIV1_HXB2  -> APOE   | +PR2=93.95% | W_-- SNR=0.1x | HH cancel=0.2x
+  [THM-V2 INS] HTLV1      -> TP53   | +PR2=85.39% | W_-- SNR=1.3x | HH cancel=2.3x
+  [THM-V2 INS] MCPyV      -> TP53   | +PR2=85.79% | W_-- SNR=1.3x | HH cancel=1.6x
+  [THM-V2 INS] AAV2       -> APOE   | +PR2=98.61% | W_-- SNR=0.0x | HH cancel=0.1x
+  [THM-V5 T2T] Loading chr17 (Human_T2T_chr17_NC_060941.1.fna.gz) for exact neighborhood micro-scan of TP53,BRCA1,ERBB2...
+    -> TP53   @ chr17:7.58 Mb (-) | GC=51.3% | NonEnv3600=68.7% | Pal6=10.2% | top_vir=KSHV_HHV8 (+0.362)
+    -> BRCA1  @ chr17:43.98 Mb (-) | GC=44.0% | NonEnv3600=68.5% | Pal6=9.7% | top_vir=KSHV_HHV8 (+0.375)
+    -> ERBB2  @ chr17:40.57 Mb (+) | GC=54.5% | NonEnv3600=50.5% | Pal6=8.3% | top_vir=EBV_HHV4 (+0.489)
+  [THM-V5 T2T] Loading chr3 (Human_T2T_chr3_NC_060927.1.fna.gz) for exact neighborhood micro-scan of TP63,VHL,MLH1,PIK3CA,FHIT...
+    -> TP63   @ chr3:192.58 Mb (+) | GC=37.1% | NonEnv3600=46.4% | Pal6=8.8% | top_vir=KSHV_HHV8 (+0.424)
+    -> VHL    @ chr3:10.14 Mb (+) | GC=47.2% | NonEnv3600=70.3% | Pal6=9.5% | top_vir=KSHV_HHV8 (+0.358)
+    -> MLH1   @ chr3:37.03 Mb (+) | GC=41.1% | NonEnv3600=56.1% | Pal6=8.2% | top_vir=KSHV_HHV8 (+0.429)
+    -> PIK3CA @ chr3:182.00 Mb (+) | GC=35.9% | NonEnv3600=49.8% | Pal6=6.3% | top_vir=KSHV_HHV8 (+0.439)
+    -> FHIT   @ chr3:60.54 Mb (-) | GC=38.4% | NonEnv3600=45.1% | Pal6=7.8% | top_vir=KSHV_HHV8 (+0.436)
+  [THM-V5 T2T] Loading chr1 (Human_T2T_chr1_NC_060925.1.fna.gz) for exact neighborhood micro-scan of TP73,NRAS...
+    -> TP73   @ chr1:3.20 Mb (+) | GC=58.8% | NonEnv3600=47.4% | Pal6=2.4% | top_vir=EBV_HHV4 (+0.516)
+    -> NRAS   @ chr1:114.72 Mb (-) | GC=39.3% | NonEnv3600=51.6% | Pal6=7.9% | top_vir=KSHV_HHV8 (+0.446)
+  [THM-V5 T2T] Loading chr13 (Human_T2T_chr13_NC_060937.1.fna.gz) for exact neighborhood micro-scan of BRCA2,RB1...
+    -> BRCA2  @ chr13:31.57 Mb (+) | GC=38.6% | NonEnv3600=55.7% | Pal6=8.6% | top_vir=KSHV_HHV8 (+0.434)
+    -> RB1    @ chr13:47.61 Mb (+) | GC=35.5% | NonEnv3600=48.1% | Pal6=3.2% | top_vir=KSHV_HHV8 (+0.427)
+  [THM-V5 T2T] Loading chr10 (Human_T2T_chr10_NC_060934.1.fna.gz) for exact neighborhood micro-scan of PTEN...
+    -> PTEN   @ chr10:88.80 Mb (+) | GC=35.5% | NonEnv3600=50.0% | Pal6=8.9% | top_vir=KSHV_HHV8 (+0.450)
+  [THM-V5 T2T] Loading chr5 (Human_T2T_chr5_NC_060929.1.fna.gz) for exact neighborhood micro-scan of APC,TERT...
+    -> APC    @ chr5:113.28 Mb (+) | GC=37.0% | NonEnv3600=53.7% | Pal6=8.5% | top_vir=KSHV_HHV8 (+0.428)
+    -> TERT   @ chr5:1.18 Mb (-) | GC=55.9% | NonEnv3600=49.5% | Pal6=5.8% | top_vir=EBV_HHV4 (+0.481)
+  [THM-V5 T2T] Loading chr9 (Human_T2T_chr9_NC_060933.1.fna.gz) for exact neighborhood micro-scan of CDKN2A...
+    -> CDKN2A @ chr9:22.00 Mb (-) | GC=40.3% | NonEnv3600=44.1% | Pal6=5.6% | top_vir=KSHV_HHV8 (+0.468)
+  [THM-V5 T2T] Loading chr11 (Human_T2T_chr11_NC_060935.1.fna.gz) for exact neighborhood micro-scan of ATM,HRAS,HBB...
+    -> ATM    @ chr11:108.30 Mb (+) | GC=36.8% | NonEnv3600=53.6% | Pal6=10.2% | top_vir=KSHV_HHV8 (+0.422)
+    -> HRAS   @ chr11:0.58 Mb (-) | GC=59.7% | NonEnv3600=56.3% | Pal6=7.5% | top_vir=KSHV_HHV8 (+0.428)
+    -> HBB    @ chr11:5.32 Mb (-) | GC=39.0% | NonEnv3600=44.1% | Pal6=3.1% | top_vir=KSHV_HHV8 (+0.414)
+  [THM-V5 T2T] Loading chr8 (Human_T2T_chr8_NC_060932.1.fna.gz) for exact neighborhood micro-scan of MYC...
+    -> MYC    @ chr8:128.87 Mb (+) | GC=44.5% | NonEnv3600=59.1% | Pal6=9.9% | top_vir=KSHV_HHV8 (+0.389)
+  [THM-V5 T2T] Loading chr12 (Human_T2T_chr12_NC_060936.1.fna.gz) for exact neighborhood micro-scan of KRAS,GAPDH...
+    -> KRAS   @ chr12:25.10 Mb (-) | GC=38.0% | NonEnv3600=52.8% | Pal6=8.0% | top_vir=KSHV_HHV8 (+0.423)
+    -> GAPDH  @ chr12:6.55 Mb (+) | GC=49.1% | NonEnv3600=64.0% | Pal6=9.8% | top_vir=KSHV_HHV8 (+0.397)
+  [THM-V5 T2T] Loading chr7 (Human_T2T_chr7_NC_060931.1.fna.gz) for exact neighborhood micro-scan of EGFR,BRAF,ACTB...
+    -> EGFR   @ chr7:55.30 Mb (+) | GC=45.1% | NonEnv3600=34.2% | Pal6=4.4% | top_vir=KSHV_HHV8 (+0.478)
+    -> BRAF   @ chr7:142.14 Mb (-) | GC=37.0% | NonEnv3600=54.1% | Pal6=9.2% | top_vir=KSHV_HHV8 (+0.435)
+    -> ACTB   @ chr7:5.65 Mb (-) | GC=54.7% | NonEnv3600=70.6% | Pal6=10.3% | top_vir=KSHV_HHV8 (+0.348)
+  [THM-V5 T2T] Loading chr18 (Human_T2T_chr18_NC_060942.1.fna.gz) for exact neighborhood micro-scan of BCL2...
+    -> BCL2   @ chr18:63.43 Mb (-) | GC=42.3% | NonEnv3600=43.7% | Pal6=5.0% | top_vir=KSHV_HHV8 (+0.458)
+  [THM-V5 T2T] Loading chr2 (Human_T2T_chr2_NC_060926.1.fna.gz) for exact neighborhood micro-scan of ALK...
+    -> ALK    @ chr2:29.60 Mb (-) | GC=43.0% | NonEnv3600=36.5% | Pal6=5.1% | top_vir=KSHV_HHV8 (+0.481)
+  [THM-V5 T2T] Loading chr19 (Human_T2T_chr19_NC_060943.1.fna.gz) for exact neighborhood micro-scan of APOE...
+    -> APOE   @ chr19:47.73 Mb (+) | GC=53.0% | NonEnv3600=68.6% | Pal6=10.0% | top_vir=KSHV_HHV8 (+0.376)
+  [THM-V11..V13] Markov-1/2 mimicry (33 vir), all-orders dose curves (11 targets) & Klein-orbit attribution (6 maps) computed.
+  [FIG] /Volumes/Мои документы/Virusu/results_virome_onco_v2_9_1/figures/fig_V1_virome_landscape.png
+  [FIG] /Volumes/Мои документы/Virusu/results_virome_onco_v2_9_1/figures/fig_V2_onco_jacobian_loci.png
+  [FIG] /Volumes/Мои документы/Virusu/results_virome_onco_v2_9_1/figures/fig_V3_t2t_neighborhood_multilag.png
+  [FIG] /Volumes/Мои документы/Virusu/results_virome_onco_v2_9_1/figures/fig_V4_locus_tile_vulnerability.png
+  [FIG] /Volumes/Мои документы/Virusu/results_virome_onco_v2_9_1/figures/fig_V5_group_discrimination_and_synonymous.png
+  [FIG] /Volumes/Мои документы/Virusu/results_virome_onco_v2_9_1/figures/fig_V6_viral_apobec_restriction.png
+  [FIG] /Volumes/Мои документы/Virusu/results_virome_onco_v2_9_1/figures/fig_V7_beyond_dinuc_mimicry_and_dose.png
+
+================================================================================================
+VIROME & ONCO AUDIT DONE (v2.9.1): 33/33 viruses, 28/28 loci, 12 insertions in 238.1 s
+[JSON] /Volumes/Мои документы/Virusu/results_virome_onco_v2_9_1/virome_onco_audit_v2.json
+[MD]   /Volumes/Мои документы/Virusu/results_virome_onco_v2_9_1/virome_onco_audit_v2.md
+[FIGS] 7 figure(s)
+================================================================================================
