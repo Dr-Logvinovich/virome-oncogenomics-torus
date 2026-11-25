@@ -1,0 +1,67 @@
+name: Zero-RNG 100/100 Verification
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  zero-rng-algebraic-audit:
+    name: 100/100 Algebraic Self-Tests & Zero-RNG Guard
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Sparse checkout engine only (skips 1 GB FASTA caches)
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            human_t2t_atlas_v2_9_1.py
+          sparse-checkout-cone-mode: false
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install NumPy & SciPy
+        run: python -m pip install --upgrade pip && pip install numpy scipy
+
+      - name: Verify Zero-RNG AST Guard, SHA-256 Provenance & 100/100 Self-Tests
+        run: |
+          python3 - <<'PY'
+          import ast
+          import hashlib
+          from pathlib import Path
+          import human_t2t_atlas_v2_9_1 as engine
+
+          script_path = Path("human_t2t_atlas_v2_9_1.py")
+          src = script_path.read_text(encoding="utf-8")
+
+          # 1. Cryptographic SHA-256 provenance check (Dataset Freeze v2.9.1)
+          expected_sha = "da9b2a74f062e663e523f096ef7e5807e173009ca582587ba1608b89c4cb205a"
+          actual_sha = hashlib.sha256(script_path.read_bytes()).hexdigest()
+          print(f"[SHA-256] {actual_sha}")
+          assert actual_sha == expected_sha, f"SHA-256 mismatch: {actual_sha} != {expected_sha}"
+
+          # 2. Zero-RNG static AST guard (no random/secrets imports, no np.random calls)
+          tree = ast.parse(src)
+          for node in ast.walk(tree):
+              if isinstance(node, ast.Import):
+                  for alias in node.names:
+                      assert alias.name.split(".")[0] not in ("random", "secrets"), f"Forbidden RNG import: {alias.name}"
+              elif isinstance(node, ast.ImportFrom) and node.module:
+                  assert node.module.split(".")[0] not in ("random", "secrets"), f"Forbidden RNG import: {node.module}"
+              elif isinstance(node, ast.Attribute) and node.attr == "random":
+                  raise AssertionError("Forbidden .random attribute access detected")
+          print("[ZERO-RNG GUARD] Passed: 0 RNG imports, 0 np.random calls")
+
+          # 3. Execute full 100/100 deterministic algebraic self-test suite
+          st = engine.self_test(verbose=False)
+          keys = [k for k in st if k not in ("all_passed", "pilot_catalog_count")]
+          print(f"[SELF-TESTS] {len(keys)}/100 passed | all_passed={st['all_passed']}")
+          assert st.get("all_passed") is True, "Self-test failed!"
+          assert len(keys) == 100, f"Expected 100 self-tests, got {len(keys)}"
+          print("[OK] Dataset Freeze v2.9.1 fully verified.")
+          PY
